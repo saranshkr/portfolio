@@ -10,7 +10,7 @@ export default function Contact() {
           I'd love to hear from you — whether it's a project, opportunity, or just to connect.
         </p>
 
-        <div className="flex justify-center gap-6 text-2xl text-gray-600 dark:text-gray-300">
+        <div className="flex justify-center gap-8 text-3xl sm:text-4xl text-gray-600 dark:text-gray-300 py-4">
           <a
             href="mailto:saranshk@terpmail.umd.edu"
             target="_blank"
@@ -39,7 +39,7 @@ export default function Contact() {
             <FaLinkedin className="hover:text-[#0077B5] transition-transform transform hover:scale-110 duration-200" />
           </a>
           <a
-            href="https://instagram.com/iamsaransh_"
+            href="https://www.instagram.com/krsaransh"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -48,7 +48,7 @@ export default function Contact() {
             <FaInstagram className="hover:text-[#E1306C] transition-transform transform hover:scale-110 duration-200" />
           </a>
           <a
-            href="/Saransh_Kumar_resume.pdf"
+            href="/portfolio/Saransh_Kumar_resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Resume"

@@ -18,7 +18,7 @@ const projects = [
     description:
       "ClimaSense is a reinforcement learning–powered HVAC optimization project built using a custom Gym environment and the Soft Actor-Critic (SAC) algorithm. It simulates dynamic room conditions with temperature sensors and schedules HVAC actions to minimize energy cost while maintaining comfort. I also built a FastAPI backend and deployed the model for real-time interaction and visualization. This project was submitted on Devpost as a complete smart energy solution.",
     tech: ["Reinforcement Learning", "Gym", "Soft Actor-Critic", "FastAPI", "Devpost"],
-    repo: null,
+    repo: "https://github.com/Ineshtandy/HVAC_Predictive_Consumption",
     demo: null,
     report: null,
   },
@@ -28,7 +28,7 @@ const projects = [
     description:
       "This deep learning project tackled the automated classification of ocular diseases using the ODIR-5K dataset. We preprocessed over 10,000 fundus images and engineered features from tabular data. I contributed to data cleaning, feature engineering, and model development. The final model was a VGG16-based CNN fine-tuned for binary classification (Cataract vs. Normal), achieving over 90% accuracy. We addressed class imbalance and data quality issues, and documented our findings in a group report and tutorial.",
     tech: ["CNN", "VGG16", "ODIR-5K", "Pandas", "OpenCV", "Transfer Learning"],
-    repo: null,
+    repo: "https://github.com/mvetlu/ocular-disease-ml",
     demo: "https://mvetlu.github.io/ocular-disease-ml/",
     report: null,
   },
@@ -38,7 +38,7 @@ const projects = [
     description:
       "This beginner-friendly project involved building a model to predict whether a user would place an order on a fictional website. I started by cleaning and analyzing raw behavioral data from a Kaggle dataset that recorded user actions like login status and page clicks. Using Gaussian Naive Bayes, I trained a propensity model to classify purchase intent, which can help businesses target high-propensity users and reduce marketing overhead. This project solidified my understanding of EDA, feature selection, and model evaluation in a real-world context.",
     tech: ["GaussianNB", "Pandas", "Seaborn", "Matplotlib"],
-    repo: null,
+    repo: "https://github.com/saranshkr/purchase-propensity-model",
     demo: null,
     report: null,
   },
@@ -58,7 +58,7 @@ const projects = [
     description:
       "This project implements a simple and efficient pipeline for face recognition in both images and videos using the Dlib library. It features HoG-based face detection and deep metric learning for face encoding and matching. The system includes scripts for training (encoding), recognition from test images, and real-time recognition from videos. Encodings are saved as pickles and the model supports both HoG and CNN detection backends. Modular CLI support allows flexibility across datasets and detection models.",
     tech: ["Dlib", "face_recognition", "OpenCV", "Python", "deep metric learning"],
-    repo: null,
+    repo: "https://github.com/saranshkr/face-recognition",
     demo: null,
     report: null,
   },
@@ -68,7 +68,7 @@ const projects = [
     description:
       "This project involved end-to-end predictive modeling using the California housing dataset. I performed data cleaning, exploratory analysis, and regression modeling using features like location, room count, and neighborhood income. I applied GridSearchCV and RandomizedSearchCV to tune models including Decision Trees, Linear Regression, and MLPs. The goal was to compare regression performance and gain practical exposure to model evaluation in real-world-like settings.",
     tech: ["Pandas", "Scikit-learn", "GridSearchCV", "MLPRegressor", "Matplotlib"],
-    repo: null,
+    repo: "https://github.com/saranshkr/house-price-prediction",
     demo: null,
     report: null,
   }

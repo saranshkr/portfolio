@@ -9,7 +9,7 @@ export default function Home() {
         <a href="/contact" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
           Contact Me
         </a>
-        <a href="/Saransh_Kumar_resume.pdf" target="_blank" rel="noopener noreferrer" className="border px-4 py-2 rounded hover:bg-gray-100">
+        <a href="/portfolio/Saransh_Kumar_resume.pdf" target="_blank" rel="noopener noreferrer" className="border px-4 py-2 rounded hover:bg-gray-100">
           View Resume
         </a>
       </div>

@@ -7,7 +7,7 @@ export default function ProjectCard({ title, summary, description, tech, repo, d
 
   return (
     <div
-      className="bg-white dark:bg-zinc-900 rounded-lg shadow-md p-6 transition-all duration-500 cursor-pointer hover:shadow-lg"
+      className="bg-white dark:bg-zinc-900/80 rounded-lg shadow-md p-6 transition-transform duration-300 cursor-pointer hover:scale-[1.05] hover:shadow-lg"
       onClick={() => setIsExpanded(!isExpanded)}
     >
       <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-1">{title}</h2>

@@ -13,7 +13,7 @@ export default function Header() {
             Contact Me
           </a>
           <a
-            href="/Saransh_Kumar_resume.pdf"
+            href="/portfolio/Saransh_Kumar_resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="border px-4 py-2 rounded hover:bg-gray-100"
