@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio • Saransh Kumar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner container">
+      <div class="brand"><span class="pill">Saransh</span></div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button class="toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="intro container">
+      <h1 class="reveal-up">Hi, I'm <span style="background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">Saransh Kumar.</span></h1>
+      <p class="reveal-up">Data Scientist with 4+ years' experience in ML, analytics, and end‑to‑end software. I build AI‑integrated products that ship.</p>
+        <a href="#experience" class="tagline reveal-up">Craft. Iterate. Ship. ✦</a>
+        <div class="scroll-cue">
+          <a href="#about" class="scroll-link">Scroll to explore ↓</a>
+        </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <p class="section-sub">A quick snapshot of who I am.</p>
+      <div class="about-content">
+        <p>I'm currently pursuing a <strong>Master's in Data Science at the University of Maryland, College Park</strong>, specializing in machine learning and big data systems. With 3+ years of professional experience across ad tech, recommenders, and computer vision, I focus on building scalable, end‑to‑end data products that solve real‑world problems.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <p class="section-sub">Impact snapshots from roles where I shipped, learned, and led.</p>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Apr 2022 – Aug 2024</div>
+            <h3>Data Scientist • Samsung Research India</h3>
+            <p>Shipped PySpark/Airflow ETL over 500+ TB SmartTV data (−30% latency), cut cloud costs by $200K/mo via serverless Spark (Glue) + EKS migration, and boosted ad targeting precision by 20% for 10M+ users with real‑time inference.</p>
+            <div class="timeline-tags">
+              <span class="tag">PySpark</span>
+              <span class="tag">Airflow</span>
+              <span class="tag">AWS</span>
+              <span class="tag">Kubernetes</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Jul 2021 – Apr 2022</div>
+            <h3>Junior Data Scientist • Wipro</h3>
+            <p>Built hybrid recommenders for B2B e‑commerce (+15% engagement) and refactored evaluation to resolve 1000+ issues, cutting test runtime by 40% and enabling weekly CI releases.</p>
+            <div class="timeline-tags">
+              <span class="tag">Python</span>
+              <span class="tag">ML</span>
+              <span class="tag">Recommendation Systems</span>
+              <span class="tag">CI/CD</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Aug 2020 – May 2021</div>
+            <h3>Research Data Science Intern • NIT Silchar</h3>
+            <p>Developed ALPR for non‑standard plates; 94% accuracy with MobileNet variant and 4–7% gain under distortion/low‑light. Ran ablations (up to −12% without key modules); authored reproducible docs and presented in 4 seminars.</p>
+            <div class="timeline-tags">
+              <span class="tag">Computer Vision</span>
+              <span class="tag">MobileNet</span>
+              <span class="tag">Research</span>
+              <span class="tag">OpenCV</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">A few things I've been designing, engineering, and polishing lately.</p>
+      <div class="grid">
+        <article class="card reveal"><div class="accent-bar"></div><div class="row"><span class="chip"><span class="icon"></span>LangChain</span><span class="chip">Neo4j</span><span class="chip">Streamlit</span></div><div class="spacer"></div><h3>Real-time Bitcoin Analytics (LangChain & Neo4j)</h3><p>Built a real-time graph analytics pipeline modeling 100K+ wallet relationships with NL Cypher generation via LangChain + Mistral; interactive Streamlit dashboard for insights.</p><a class="cta" href="https://saranshkr.github.io/portfolio/" target="_blank">Live Portfolio →</a></article>
+        <article class="card reveal"><div class="accent-bar"></div><div class="row"><span class="chip"><span class="icon"></span>SAC (RL)</span><span class="chip">FastAPI</span><span class="chip">Forecasting</span></div><div class="spacer"></div><h3>ClimaSense — Smart HVAC Control</h3><p>Optimized HVAC energy usage with Soft Actor-Critic in a custom smart environment; deployed policy via FastAPI using 8-hour weather forecasts.</p><a class="cta" href="https://saranshkr.github.io/portfolio/" target="_blank">Case Study →</a></article>
+        <article class="card reveal"><div class="accent-bar"></div><div class="row"><span class="chip"><span class="icon"></span>CNN</span><span class="chip">VGG16</span><span class="chip">ODIR-5K</span></div><div class="spacer"></div><h3>Ocular Disease Recognition</h3><p>Classified retinal diseases from fundus images using a VGG16-based CNN with tabular features; validated salience via statistical tests.</p><a class="cta" href="https://github.com/saranshkr\
+          " target="_blank">View on GitHub →</a></article>
+              <article class="card reveal"><div class="accent-bar"></div><div class="row"><span class="chip"><span class="icon"></span>GNB</span><span class="chip">scikit-learn</span><span class="chip">Python</span></div><div class="spacer"></div><h3>Purchase Propensity Model</h3><p>Predicted user purchase likelihood from behavioral features using Gaussian Naive Bayes with pipeline for preprocessing and evaluation.</p><a class="cta" href="https://github.com/saranshkr\
+                " target="_blank">View on GitHub →</a></article>
+                <article class="card reveal"><div class="accent-bar"></div><div class="row"><span class="chip"><span class="icon"></span>K-Means</span><span class="chip">PCA</span><span class="chip">scikit-learn</span></div><div class="spacer"></div><h3>Customer Segmentation</h3><p>Clustered customer personas from marketing data using dimensionality reduction and K-Means to inform targeting and personalization.</p><a class="cta" href="https://github.com/saranshkr\
+                  " target="_blank">View on GitHub →</a></article>
+                  <article class="card reveal"><div class="accent-bar"></div><div class="row"><span class="chip"><span class="icon"></span>Dlib HOG</span><span class="chip">OpenCV</span><span class="chip">Metric Learning</span></div><div class="spacer"></div><h3>Face Recognition System</h3><p>Real-time face detection and recognition using Dlib’s HOG detector and deep metric embeddings; built CLI + camera pipeline.</p><a class="cta" href="https://github.com/saranshkr\
+                    " target="_blank">View on GitHub →</a></article>
+                    <article class="card reveal"><div class="accent-bar"></div><div class="row"><span class="chip"><span class="icon"></span>Regression</span><span class="chip">XGBoost</span><span class="chip">scikit-learn</span></div><div class="spacer"></div><h3>House Price Prediction</h3><p>Modeled California house prices with feature engineering, cross-validation, and hyperparameter tuning of tree-based regressors.</p><a class="cta" href="https://github.com/saranshkr\
+                      " target="_blank">View on GitHub →</a></article>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+  <h2 class="section-title">Skills</h2>
+  <p class="section-sub">A concise stack I love working with.</p>
+  <div class="grid">
+
+    <article class="card skill-card reveal"><div class="accent-bar"></div>
+    <h3>Data Science & Machine Learning</h3>
+    <div class="skill-pills">
+    <span class="chip"><span class="icon"></span>NumPy</span>
+    <span class="chip">Pandas</span>
+    <span class="chip">Scikit-learn</span>
+    <span class="chip">TensorFlow</span>
+    <span class="chip">PyTorch</span>
+    <span class="chip">Keras</span>
+    <span class="chip">OpenCV</span>
+    <span class="chip">XGBoost</span>
+    <span class="chip">NLP</span>
+    <span class="chip">LLMs</span>
+    <span class="chip">Transfer Learning</span>
+    <span class="chip">Hyperparameter Tuning</span>
+    <span class="chip">Regression</span>
+    <span class="chip">Classification</span>
+    <span class="chip">Clustering</span>
+    <span class="chip">Time Series</span>
+    <span class="chip">Computer Vision</span>
+  </div>
+</article>
+
+<article class="card skill-card reveal"><div class="accent-bar"></div>
+<h3>Big Data & Cloud</h3>
+<div class="skill-pills">
+<span class="chip"><span class="icon"></span>PySpark</span>
+<span class="chip">Kafka</span>
+<span class="chip">Hadoop</span>
+<span class="chip">AWS</span>
+<span class="chip">GCP</span>
+<span class="chip">HDFS</span>
+<span class="chip">Airflow</span>
+<span class="chip">Kubernetes</span>
+<span class="chip">Snowflake</span>
+<span class="chip">ETL</span>
+</div>
+</article>
+
+<article class="card skill-card reveal"><div class="accent-bar"></div>
+<h3>Data Visualization</h3>
+<div class="skill-pills">
+<span class="chip"><span class="icon"></span>Matplotlib</span>
+<span class="chip">Seaborn</span>
+<span class="chip">Plotly</span>
+<span class="chip">Streamlit</span>
+<span class="chip">Tableau</span>
+<span class="chip">Power BI</span>
+<span class="chip">Excel</span>
+</div>
+</article>
+
+<article class="card skill-card reveal"><div class="accent-bar"></div>
+  <h3>Web & Tools</h3>
+  <div class="skill-pills">
+  <span class="chip"><span class="icon"></span>FastAPI</span>
+  <span class="chip">Flask</span>
+  <span class="chip">REST APIs</span>
+  <span class="chip">GraphQL</span>
+  <span class="chip">React</span>
+  <span class="chip">Vite</span>
+  <span class="chip">Tailwind</span>
+  <span class="chip">Docker</span>
+  <span class="chip">Git</span>
+  <span class="chip">GitHub Actions</span>
+  <span class="chip">CI/CD</span>
+  <span class="chip">Jupyter Notebook</span>
+  <span class="chip">VS Code</span>
+  <span class="chip">Linux</span>
+</div>
+</article>
+
+  <article class="card skill-card reveal"><div class="accent-bar"></div>
+  <h3>Languages</h3>
+  <div class="skill-pills">
+  <span class="chip"><span class="icon"></span>Python</span>
+  <span class="chip">SQL</span>
+  <span class="chip">Java</span>
+  <span class="chip">C++</span>
+  <span class="chip">JavaScript</span>
+  <span class="chip">HTML</span>
+  <span class="chip">CSS</span>
+  <span class="chip">Bash</span>
+  </div>
+  </article>
+  
+  
+  
+  
+  
+  
+  
+  <article class="card skill-card reveal"><div class="accent-bar"></div>
+  <h3>Databases</h3>
+  <div class="skill-pills">
+  <span class="chip"><span class="icon"></span>MySQL</span>
+  <span class="chip">PostgreSQL</span>
+  <span class="chip">MongoDB</span>
+  <span class="chip">Neo4j</span>
+  <span class="chip">DynamoDB</span>
+  </div>
+  </article>
+
+
+</section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-sub">Open to full‑time roles and collaborations.</p>
+      <div class="row">
+        <a class="btn btn-primary" href="mailto:saranshk@terpmail.umd.edu">Email Me</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/saransh-kr/" target="_blank">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/saranshkr" target="_blank">GitHub</a>
+        <a class="btn" href="https://saranshkr.github.io/portfolio/" target="_blank">Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Saransh Kumar • Built with vanilla HTML/CSS/JS • <span style="background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">Gradient‑kissed</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
