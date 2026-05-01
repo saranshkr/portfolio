@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Sora";
+  --font-body: "Manrope";
+  --font-mono: "JetBrains Mono";
+  --bg: 245 247 250;
+  --surface: 255 255 255;
+  --surface-alt: 237 241 252;
+  --text: 15 23 42;
+  --muted: 71 85 105;
+  --border: 148 163 184;
+  --accent: 99 102 241;
+  --accent-soft: 224 231 255;
+  --accent-start: 59 130 246;
+  --accent-mid: 99 102 241;
+  --accent-end: 168 85 247;
+  --accent-shadow: 99 102 241;
+}
+
+.dark {
+  --bg: 7 11 18;
+  --surface: 13 18 28;
+  --surface-alt: 18 25 42;
+  --text: 241 245 249;
+  --muted: 148 163 184;
+  --border: 51 65 85;
+  --accent: 129 140 248;
+  --accent-soft: 30 41 89;
+  --accent-start: 96 165 250;
+  --accent-mid: 129 140 248;
+  --accent-end: 192 132 252;
+  --accent-shadow: 129 140 248;
+}
+
+html {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  @apply min-h-screen bg-bg font-sans text-text antialiased;
+  background-image:
+    radial-gradient(circle at top left, rgb(var(--accent-start) / 0.14), transparent 30%),
+    radial-gradient(circle at 85% 12%, rgb(var(--accent-end) / 0.12), transparent 24%),
+    radial-gradient(circle at 55% 100%, rgb(var(--accent-mid) / 0.08), transparent 30%),
+    linear-gradient(180deg, rgb(var(--surface) / 0.3), transparent 28%),
+    linear-gradient(rgb(var(--bg)), rgb(var(--bg)));
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgb(var(--text) / 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--text) / 0.02) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(circle at center, black, transparent 80%);
+  opacity: 0.55;
+}
+
+::selection {
+  background: rgb(var(--accent-mid) / 0.24);
+  color: inherit;
+}
+
+a,
+button {
+  @apply transition duration-200 ease-out;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display tracking-[-0.035em] text-text;
+  }
+}
+
+@layer components {
+  .surface-card {
+    @apply rounded-2xl border border-border/50 bg-surface/85 shadow-soft backdrop-blur-sm;
+  }
+
+  .section-shell {
+    @apply py-16 md:py-20;
+  }
+
+  .section-stack {
+    @apply space-y-10 md:space-y-12;
+  }
+
+  .eyebrow {
+    @apply font-mono text-[0.7rem] uppercase tracking-[0.24em] text-muted;
+  }
+
+  .page-title {
+    @apply text-4xl leading-[1.02] md:text-5xl;
+  }
+
+  .page-copy {
+    @apply max-w-2xl text-base leading-7 text-muted md:text-lg;
+  }
+
+  .tag-chip {
+    @apply inline-flex items-center rounded-full border border-border/60 bg-surfaceAlt/70 px-3 py-1.5 font-mono text-[0.72rem] uppercase tracking-[0.18em] text-muted;
+  }
+
+  .brand-gradient {
+    background-image: linear-gradient(
+      135deg,
+      rgb(var(--accent-start)) 0%,
+      rgb(var(--accent-mid)) 52%,
+      rgb(var(--accent-end)) 100%
+    );
+  }
+
+  .brand-gradient-text {
+    background-image: linear-gradient(
+      135deg,
+      rgb(var(--accent-start)) 0%,
+      rgb(var(--accent-mid)) 52%,
+      rgb(var(--accent-end)) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .brand-pill {
+    @apply rounded-full border px-3 py-1 font-mono text-[0.68rem] uppercase tracking-[0.2em] text-white;
+    border-color: rgb(var(--accent-mid) / 0.24);
+    background-image: linear-gradient(
+      135deg,
+      rgb(var(--accent-start)) 0%,
+      rgb(var(--accent-mid)) 52%,
+      rgb(var(--accent-end)) 100%
+    );
+    box-shadow: 0 14px 30px rgb(var(--accent-shadow) / 0.16);
+  }
+
+  .brand-button {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold text-white;
+    background-image: linear-gradient(
+      135deg,
+      rgb(var(--accent-start)) 0%,
+      rgb(var(--accent-mid)) 52%,
+      rgb(var(--accent-end)) 100%
+    );
+    box-shadow: 0 16px 36px rgb(var(--accent-shadow) / 0.22);
+  }
+
+  .brand-button:hover {
+    transform: translateY(-1px);
+    filter: saturate(1.03) brightness(1.04);
+  }
+
+  .brand-soft {
+    border-color: rgb(var(--accent-mid) / 0.18);
+    background: linear-gradient(
+      135deg,
+      rgb(var(--accent-start) / 0.16) 0%,
+      rgb(var(--accent-end) / 0.12) 100%
+    );
+  }
+}
